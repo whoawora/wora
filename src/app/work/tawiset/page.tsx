@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger, Power2 } from "gsap/all";
 import Image from "next/image";
@@ -8,9 +8,8 @@ type Props = {
   params: any;
 };
 
-export default function tawiset({ params }: Props) {
+export default function Tawiset({ params }: Props) {
   const containerRef = useRef(null);
-  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
