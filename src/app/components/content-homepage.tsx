@@ -16,7 +16,6 @@ function ContentHomePage() {
       <div className="work-content" data-aos="fade-up">
         <a href="#">
           <div className="w-full h-full bg-blue-600" data-aos="fade-up">
-              <img src="" alt=""/>
           </div>
         </a>
       </div>
