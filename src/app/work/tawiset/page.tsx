@@ -129,11 +129,8 @@ export default function Tawiset({ params }: Props) {
       <div className="">
         {/* <div className="bg-black"> */}
         <div className="bg-black">
-          <section
-            ref={containerRef}
-            style={{ overflow: "hidden", width: "100%", height: "100vh" }}
-          >
-           <Spline scene="https://prod.spline.design/KAGLNgRaJREbxXqs/scene.splinecode" />
+          <section ref={containerRef} style={{ overflow: "hidden", width: "100%", height: "100vh" }}>
+          <Spline scene="https://prod.spline.design/KAGLNgRaJREbxXqs/scene.splinecode" />
           </section>
         </div>
       
