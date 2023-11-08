@@ -21,6 +21,9 @@ const Navbar: React.FC = () => {
     const openNav = () => {
       animateOpenNav();
       const navBtn = document.getElementById("menu-toggle-btn");
+      const navHeadBtn1 = document.getElementById("menu-btn1");
+      const navHeadBtn2 = document.getElementById("menu-btn2");
+      const navHeadBtn3 = document.getElementById("menu-btn3");
       if (navBtn) {
         navBtn.addEventListener("click", function (e) {
           e.preventDefault();
@@ -33,8 +36,28 @@ const Navbar: React.FC = () => {
           }
         });
       }
+      if (navHeadBtn1) {
+        navHeadBtn1.addEventListener("click", function (e) {
+          e.preventDefault();
+          tl.reversed(!tl.reversed());
+        });
+      }
+      if (navHeadBtn2) {
+        navHeadBtn2.addEventListener("click", function (e) {
+          e.preventDefault();
+          tl.reversed(!tl.reversed());
+        });
+      }
+      if (navHeadBtn3) {
+        navHeadBtn3.addEventListener("click", function (e) {
+          e.preventDefault();
+          tl.reversed(!tl.reversed());
+        });
+      }
+
     };
     openNav();
+
 
 
     tl.from(".flex > div", 0.4, {
@@ -84,15 +107,17 @@ const Navbar: React.FC = () => {
           <div className="nav text-center">
             <div className="col">
               <div className="nav-link">
-                <Link href="/work">Work</Link>
+                <Link href="/work" id="menu-btn1"> Work </Link>
                 <div className="nav-item-wrapper"></div>
               </div>
               <div className="nav-link">
-                <Link href="/about">About</Link>
+                <Link href="/about" id="menu-btn2">About</Link>
                 <div className="nav-item-wrapper"></div>
               </div>
               <div className="nav-link">
-                <Link href="/contact">Contact</Link>
+                <Link href="/contact">
+                  <div  id="menu-btn3">Contact</div>
+                </Link>
                 <div className="nav-item-wrapper"></div>
               </div>
             </div>
