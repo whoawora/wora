@@ -3,13 +3,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/router'
-import { IonIcon } from '@ionic/react';
-import { logoIonic } from 'ionicons/icons';
-import { TweenMax } from 'gsap';
+import { useParams } from 'next/navigation'
 
 
 const Navbar: React.FC = () => {
+  const params = useParams()
+  console.log(params)
   useEffect(() => {
     const tl = gsap.timeline({ paused: true });
 
@@ -38,21 +39,21 @@ const Navbar: React.FC = () => {
       }
       if (navHeadBtn1) {
         navHeadBtn1.addEventListener("click", function (e) {
-          e.preventDefault();
+          // e.preventDefault();
           navBtn?.classList.toggle("active");
           tl.reversed(!tl.reversed());
         });
       }
       if (navHeadBtn2) {
         navHeadBtn2.addEventListener("click", function (e) {
-          e.preventDefault();
+          // e.preventDefault();
           navBtn?.classList.toggle("active");
           tl.reversed(!tl.reversed());
         });
       }
       if (navHeadBtn3) {
         navHeadBtn3.addEventListener("click", function (e) {
-          e.preventDefault();
+          // e.preventDefault();
           navBtn?.classList.toggle("active");
           tl.reversed(!tl.reversed());
         });
@@ -96,6 +97,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div>
+      
         <div className="navbar">
           <div className="site-logo">
             <Link href="/">wora</Link>
@@ -110,7 +112,7 @@ const Navbar: React.FC = () => {
           <div className="nav text-center">
             <div className="col">
               <div className="nav-link">
-                <Link href="/work" id="menu-btn1"> Work </Link>
+                <Link href="/work" id="menu-btn1" as="/work"> Work </Link>
                 <div className="nav-item-wrapper"></div>
               </div>
               <div className="nav-link">

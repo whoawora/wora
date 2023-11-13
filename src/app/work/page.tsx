@@ -1,12 +1,20 @@
+
 import React from 'react'
+import Image from 'next/image'
+import tawisetimg from '@/image/tawiset-cover.png'
 
 type Props = {}
 
 export default function page({}: Props) {
   return (
     <div>
-    <div className="grid grid-cols-2 gap-4 pt-14">
+    <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 pt-14">
       <div className="work-content" data-aos="fade-up">
+      <Image
+        src={tawisetimg}
+  
+        alt="Picture of the author"
+      />
         <a href="#">
           {/* <div className="w-full h-full bg-blue-600" data-aos="fade-up">
             2
