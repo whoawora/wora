@@ -1,49 +1,31 @@
 
 import React from 'react'
 import Image from 'next/image'
+import Link from "next/link";
 import tawisetimg from '@/image/tawiset-cover.png'
+
 
 type Props = {}
 
 export default function page({}: Props) {
   return (
     <div>
-    <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 pt-14">
-      <div className="work-content" data-aos="fade-up">
-      <Image
-        src={tawisetimg}
-  
-        alt="Picture of the author"
-      />
-        <a href="#">
-          {/* <div className="w-full h-full bg-blue-600" data-aos="fade-up">
-            2
-          </div> */}
-        </a>
-      </div>
-      <div className="work-content" data-aos="fade-up">
-        <a href="#">
-          {/* <div className="w-full h-full bg-red-600" data-aos="fade-up">
-            2
-          </div> */}
-        </a>
-      </div>  
-      <div className="work-content" data-aos="fade-up">
-        <a href="#">
-          {/* <div className="w-full h-full bg-blue-600" data-aos="fade-up">
-            2
-          </div> */}
-        </a>
-      </div>
-      <div className="work-content" data-aos="fade-up">
-        <a href="#">
-          {/* <div className="w-full h-full bg-red-600" data-aos="fade-up">
-            2
-          </div> */}
-        </a>
-      </div>  
-    </div>
+    <div className='container mx-auto'>
+    <div className="grid grid-cols-1 gap-4 pt-16">
       
+      <div className="work-content" data-aos="fade-up">
+        <Link href="work/tawiset">
+        <Image
+        src={tawisetimg}
+        alt="Picture of the author"
+        className='rounded-3xl'
+      />
+        </Link>
+    
+      </div> 
+      
+    </div>
+    </div>
     </div>
   )
 }

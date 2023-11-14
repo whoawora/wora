@@ -3,14 +3,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
-import { usePathname } from 'next/navigation'
-import { useRouter } from 'next/router'
 import { useParams } from 'next/navigation'
 
 
 const Navbar: React.FC = () => {
-  const params = useParams()
-  console.log(params)
   useEffect(() => {
     const tl = gsap.timeline({ paused: true });
 
@@ -39,21 +35,18 @@ const Navbar: React.FC = () => {
       }
       if (navHeadBtn1) {
         navHeadBtn1.addEventListener("click", function (e) {
-          // e.preventDefault();
           navBtn?.classList.toggle("active");
           tl.reversed(!tl.reversed());
         });
       }
       if (navHeadBtn2) {
         navHeadBtn2.addEventListener("click", function (e) {
-          // e.preventDefault();
           navBtn?.classList.toggle("active");
           tl.reversed(!tl.reversed());
         });
       }
       if (navHeadBtn3) {
         navHeadBtn3.addEventListener("click", function (e) {
-          // e.preventDefault();
           navBtn?.classList.toggle("active");
           tl.reversed(!tl.reversed());
         });
