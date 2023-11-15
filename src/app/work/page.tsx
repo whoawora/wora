@@ -9,9 +9,10 @@ type Props = {}
 
 export default function page({}: Props) {
   return (
-    <div className='bg-black'>
-      <div className='px-6 xl:px-28  mx-auto'>
-        <div className="grid grid-cols-1 gap-4 pt-16 bg-black">
+    <div className='bg-black h-full'>
+      <div className='px-6 xl:px-28  mx-auto pt-16'>
+      
+        <div className="grid grid-cols-1 gap-4">
           <div className="work-content" data-aos="fade-up">
               <Link href="work/tawiset">
               <Image
@@ -24,10 +25,12 @@ export default function page({}: Props) {
           <div className="work-content" data-aos="fade-up">
         
           </div>
-          <br />
-          <br />
         </div>
+     
       </div>
+        <br />
+        <br />
+        <br />
     </div>
   )
 }

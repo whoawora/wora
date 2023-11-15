@@ -246,10 +246,8 @@ span::before {
 
 
 .work-content {
-  background: transparent;
   width: 100%;
   height: max-content;
-  display: block;
 }
 
 .spline-container {

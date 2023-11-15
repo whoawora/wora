@@ -16,6 +16,7 @@ const ScrollAnimations: React.FC = () => {
     const container = containerRef.current;
     const spline = document.querySelector("Spline")
     const { innerHeight } = window;
+    
 
     gsap.to(spline, {
       scale: 0, // ปรับขนาดของ SVG ตามที่คุณต้องการ
