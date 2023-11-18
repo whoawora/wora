@@ -1,29 +1,23 @@
 
+import './globals.css'
+import Header from '../components/header'
 
-
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Navbar from "./components/navbar";
-import "@/app/styles/globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
-export const metadata: Metadata = {
-  title: "WORA",
-  description: "portfolio worawiboon",
-};
+export const metadata = {
+  title: 'WORA',
+  description: 'portfolio worawiboon',
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
-
   return (
     <html lang="en">
-      <body className={inter.className}>
-      <Navbar />
+      <body>
+        <Header />
         {children}
       </body>
     </html>
-  );
+  )
 }
