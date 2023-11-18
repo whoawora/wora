@@ -45,7 +45,7 @@ export default function AboutHome({}: Props) {
     return () => {
       anim.kill();
     };
-  }, []);
+  }, [lettersRef]);
 
   return (
     <div>

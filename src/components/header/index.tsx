@@ -4,7 +4,7 @@ import React, {useState, useEffect} from 'react'
 import styles from './style.module.scss'
 import { usePathname } from 'next/navigation';
 
-export default function navbar() {
+export default function Navbar() {
   const [isActive, setIsActive] = useState(false);
   const pathname = usePathname();
 
