@@ -2,7 +2,7 @@
 
 import styles from "./style.module.scss";
 import React, { useState, useEffect } from "react";
-import Nav from "./nav";
+import Nav from "./nav/index";
 import { usePathname } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 
