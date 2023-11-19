@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 
 type Props = {};
 
@@ -10,23 +11,20 @@ export default function page({}: Props) {
           <h1 className="mb-20 text-7xl">Contact</h1>
           <div className="grid grid-cols-1 d-flex align-middle gap-20">
             <div className="text-8xl ">
-              <a
-              className="border border-white rounded-full py-6 px-20"
-                href="https://www.linkedin.com/in/worawiboon-sathone"
-                target="_blank"
-              >
-                *Linkedin
-              </a>
+              <Link className="" href="https://www.linkedin.com/in/worawiboon-sathone"
+                target="_blank">
+                Linkedin
+              </Link>
             </div>
             <div className="text-8xl">
-              <a className="border border-white rounded-full py-6 px-20" href="https://www.instagram.com/pecwrs/" target="_blank">
-                Instagram*
-              </a>
+              <Link className="" href="https://www.instagram.com/pecwrs/" target="_blank">
+                Instagram
+              </Link>
             </div>
             <div className="text-8xl">
-              <a href="mailto:worasathone@gmail.com" className="px-20 border border-white rounded-full py-6">
-                *DROP ME AN EMAIL*
-              </a>
+              <Link href="mailto:worasathone@gmail.com" className="px-20 border border-white rounded-full py-6">
+                DROP ME AN EMAIL
+              </Link>
             </div>
           </div>
         </div>

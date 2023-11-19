@@ -2,7 +2,8 @@
     padding: 30px;
     position: fixed;
     right: 0;
-    z-index: 1;
+    z-index: 100;
+
     .button{
         width: 80px;
         height: 80px;
@@ -13,6 +14,7 @@
         align-items: center;
         justify-content: center;
     }
+
     .burger{
         width: 100%;
         &::after, &::before{
@@ -25,18 +27,23 @@
             position: relative;
             transition: transform 0.3s;
         }
+
         &::after{
             top: -5px;
         }
+
         &::before{
             top: 5px;
         }
     }
+
     .burgerActive{
+
         &::after{
             transform: rotate(45deg);
             top: -1px;
         }
+
         &::before{
             transform: rotate(-45deg);
             top: 0px;
