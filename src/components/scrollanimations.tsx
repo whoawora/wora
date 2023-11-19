@@ -65,7 +65,9 @@ const ScrollAnimations: React.FC = () => {
   }, []);
 
   return (
-    <></>
+    <>
+      <div className="bg-neutral-900 w-screen h-screen"></div>
+    </>
     // <div className="bg-black">
     //   <section id="zoom-in" ref={containerRef} style={{ overflow: "hidden", width:"100%",height: "100vh" }}>
     //   <Spline scene="https://prod.spline.design/d0wpBGqr0MU4-o2B/scene.splinecode" />

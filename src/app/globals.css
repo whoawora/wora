@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+body {
+  cursor: wait;
+}
+
 /* .container-custom{
   padding-left: 30px;
   padding-right: 100px;
@@ -48,10 +52,10 @@
   padding: 0.4em 3em;
 } */
 
-.site-logo {
+/* .site-logo {
   font-size: 13px;
   color: #fff;
-}
+} */
 
 
 
@@ -271,7 +275,7 @@ span::before {
   --headlineSmall: clamp(1rem, 1.2vw, 6rem);
 }
 .reveal{
-  padding-left: 30%;
+  padding-left: 20%;
   padding-right: 10%;
 }
 .reveal-text{

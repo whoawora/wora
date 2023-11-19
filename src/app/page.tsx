@@ -1,12 +1,27 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ScrollAnimations from "../components/scrollanimations";
+import Preloader from '../components/Preloader'
+import { AnimatePresence } from "framer-motion";
 
 
 export default function Home() {
+  const[isLoading, setIsLoading] = useState(true)
+
+  useEffect( () => {
+    setTimeout( () => {
+       setIsLoading(false);
+       document.body.style.cursor = 'default'
+       window.scrollTo(0,0);
+    }, 2000)
+  },[])
+
   return (
     <div>
+      <AnimatePresence mode="wait">
+      { isLoading && <Preloader />}
+      </AnimatePresence>
       <ScrollAnimations />
     </div>
   );

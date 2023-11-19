@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { menuSlide } from '../anim'
 import Link from './Link'
 import Curve from './Curve';
+import Footer from './Footer'
 
 const navItems = [
     {
@@ -43,7 +44,7 @@ export default function Index() {
                       })
                     }
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
         <Curve />
     </motion.div>
