@@ -6,7 +6,7 @@ import Nav from "./nav/index";
 import { usePathname } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 
-export default function Home() {
+export default function index() {
 
   const [isActive, setIsActive] = useState(false);
   const pathname = usePathname();
