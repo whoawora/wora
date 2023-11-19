@@ -26,7 +26,7 @@ const navItems = [
     },
   ]
 
-export default function Index() {
+export default function index() {
   const pathname = usePathname();
   console.log(pathname)
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
