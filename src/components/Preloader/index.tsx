@@ -1,5 +1,5 @@
 "use client"
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './style.module.scss'
 import { motion } from 'framer-motion'
 import { slideUp } from './anim'
