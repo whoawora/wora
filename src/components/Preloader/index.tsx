@@ -4,7 +4,7 @@ import styles from './style.module.scss'
 import { motion } from 'framer-motion'
 import { slideUp } from './anim'
 
-export default function index() {
+export default function Index() {
   const [dimension, setDimension] = useState({width:0, height:0})
 
   useEffect( () => {
