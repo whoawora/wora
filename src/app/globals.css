@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  cursor: wait;
-}
-
-
-/* about */
 :root {
   --backgroundColor: #FEF852;
   --backgroundColorSecondary: #FFFC94;
@@ -23,6 +11,24 @@ body {
   --headlineBig: clamp(3rem, 10vw, 15rem);
   --headlineSmall: clamp(1rem, 1.2vw, 6rem);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: wait;
+}
+.text-contact{
+  font-size: var(--headlineBig);
+  font-weight: 800;
+  word-wrap: break-word;
+}
+
+
+/* about */
 .reveal{
   padding-left: 20%;
   padding-right: 10%;
