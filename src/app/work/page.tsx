@@ -15,7 +15,7 @@ export default function page({}: Props) {
       <div className='px-6 xl:px-28 mx-auto pt-16'>
         <div className="grid grid-cols-1 gap-4">
         <motion.div variants={imgSlide} initial="initial" animate="enter" exit="exit">
-          <div className="work-content" data-aos="fade-up">
+          <div className="work-content rounded-3xl bg-neutral-900 w-full h-full" data-aos="fade-up">
               <Link href="work/tawiset">
               <Image
               src={tawisetimg}
