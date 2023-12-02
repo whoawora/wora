@@ -5,11 +5,13 @@ import { gsap } from "gsap";
 import { easeInOut } from "framer-motion";
 import styles from './homepage.module.css'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitType from 'split-type'
 
 
 
+gsap.registerPlugin(SplitText,ScrollTrigger);
 export default function Index() {
-  gsap.registerPlugin(SplitText);
+  const target = useRef(null);
   const firstText = useRef(null);
   const secondText = useRef(null);
   const thirdText = useRef(null);
@@ -18,7 +20,6 @@ export default function Index() {
   let direction = 1;
 
   useEffect( () => {
-    gsap.registerPlugin(ScrollTrigger);
     requestAnimationFrame(animation);
 
     gsap.to(slider.current, {
@@ -30,7 +31,7 @@ export default function Index() {
         onUpdate: e => direction = e.direction * -1
       },
       x: "-=300px",
-    })
+    });
   }, [])
 
   const animation = () => {
@@ -47,37 +48,37 @@ export default function Index() {
     requestAnimationFrame(animation);
   }
 
-  let sfn = new SplitText(".split-first-name", { type: "chars" });
-  let charFirstName = sfn.chars;
-  let sln = new SplitText(".split-last-name", { type: "chars" });
-  let charLastName = sln.chars;
-  let spt = new SplitText(".split-position", { type: "chars" });
-  let charPosition = spt.chars;
 
-  gsap.from(charFirstName, {
-    delay: 0.4,
-    yPercent: 130,
-    stagger: 0.03,
-    ease: easeInOut,
-    duration: 1,
-  });
+    if (target.current) {
+      const sfn = new SplitType(target.current);
+      const sln = new SplitType('.split-last-name')  
+      const spt = new SplitType('.split-position')   
 
-  gsap.from(charLastName, {
-    delay: 0.4,
-    yPercent: 130,
-    stagger: 0.03,
-    ease: easeInOut,
-    duration: 1,
-  });
+      gsap.from(sfn.chars, {
+      delay: 0.4,
+      yPercent: 130,
+      stagger: 0.03,
+      ease: easeInOut,
+      duration: 1,
+    });
 
-  gsap.from(charPosition, {
-    delay: 0.4,
-    yPercent: 130,
-    stagger: 0.03,
-    ease: easeInOut,
-    duration: 1,
-  });
+      gsap.from(sln.chars, {
+        delay: 0.4,
+        yPercent: 130,
+        stagger: 0.03,
+        ease: easeInOut,
+        duration: 1,
+      });
+    
+      gsap.from(spt.chars, {
+        delay: 0.4,
+        yPercent: 130,
+        stagger: 0.03,
+        ease: easeInOut,
+        duration: 1,
+      });
 
+  }
  
 
   return (
@@ -86,13 +87,13 @@ export default function Index() {
       <section></section>
       <section>
         <div>
-            <div className="con-text text-center text-white">
+            <div className="con-text text-center text-white" ref={target}>
                 <h1 className="split-first-name">worawiboon</h1>
             </div>
-            <div className="con-text text-center text-white">
+            <div className="con-text text-center text-white" ref={target}>
                 <h1 className="split-last-name">sathone</h1>
             </div>
-            <div className="con-text text-center text-white">
+            <div className="con-text text-center text-white" ref={target}>
                 <h1 className="split-position">UX / UI Design</h1>
             </div>    
         </div>
@@ -112,6 +113,7 @@ export default function Index() {
       </section>
     
     </div>
+    <div className="h-screen bg-white"></div>
     
     </>
   );
