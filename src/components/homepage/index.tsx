@@ -50,7 +50,7 @@ export default function Index() {
 
 
     if (target.current) {
-      const sfn = new SplitType(target.current);
+      const sfn = new SplitType('.split-first-name');
       const sln = new SplitType('.split-last-name')  
       const spt = new SplitType('.split-position')   
 
@@ -83,17 +83,17 @@ export default function Index() {
 
   return (
     <>
-    <div className="h-screen grid content-between">
+    <div className="h-screen grid content-between text-center">
       <section></section>
       <section>
         <div>
-            <div className="con-text text-center text-white" ref={target}>
+            <div className="con-text text-center text-white"  ref={target}>
                 <h1 className="split-first-name">worawiboon</h1>
             </div>
-            <div className="con-text text-center text-white" ref={target}>
+            <div className="con-text text-center text-white"  ref={target}>
                 <h1 className="split-last-name">sathone</h1>
             </div>
-            <div className="con-text text-center text-white" ref={target}>
+            <div className="con-text text-center text-white"  ref={target}>
                 <h1 className="split-position">UX / UI Design</h1>
             </div>    
         </div>
