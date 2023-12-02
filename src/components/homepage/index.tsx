@@ -1,18 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import "../homepage/homepage.css";
-import SplitType from "split-type";
 import SplitText from "gsap-trial/SplitText";
 import { gsap } from "gsap";
-import { animate, easeInOut, easeOut } from "framer-motion";
+import { easeInOut } from "framer-motion";
 import styles from './homepage.module.css'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { slide } from "../header/anim";
-import { dir } from "console";
 
 
-gsap.registerPlugin(SplitText);
-export default function Homepage() {
 
+export default function Index() {
+  gsap.registerPlugin(SplitText);
   const firstText = useRef(null);
   const secondText = useRef(null);
   const thirdText = useRef(null);

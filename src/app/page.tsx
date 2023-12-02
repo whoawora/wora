@@ -1,10 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import ScrollAnimations from "../components/scrollanimations";
 import Preloader from '../components/Preloader'
 import { AnimatePresence } from "framer-motion";
-import Homepage from "../components/homepage/homepage";
+import Homepage from '../components/homepage';
 
 
 export default function Home() {
