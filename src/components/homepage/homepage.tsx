@@ -1,4 +1,4 @@
-import React, { useEffect,useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "../homepage/homepage.css";
 import SplitType from "split-type";
 import SplitText from "gsap-trial/SplitText";
@@ -11,7 +11,7 @@ import { dir } from "console";
 
 
 gsap.registerPlugin(SplitText);
-export default function homepage() {
+export default function Homepage() {
 
   const firstText = useRef(null);
   const secondText = useRef(null);
