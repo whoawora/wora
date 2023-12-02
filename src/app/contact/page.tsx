@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 type Props = {};
 
-export default function page({}: Props) {
+export default function Contact({}: Props) {
   return (
     <div className="pt-20 bg-black w-screen h-screen">
       <div className=" bg-black">

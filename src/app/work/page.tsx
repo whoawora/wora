@@ -11,7 +11,7 @@ import { imgSlide } from './anim';
 
 type Props = {}
 
-export default function page({}: Props) {
+export default function Work({}: Props) {
   return (
     <>
     <div className='bg-black w-full h-screen'>

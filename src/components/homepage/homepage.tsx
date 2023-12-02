@@ -21,7 +21,6 @@ export default function Homepage() {
   let direction = 1;
 
   useEffect( () => {
-    if (typeof window !== 'undefined') {
     gsap.registerPlugin(ScrollTrigger);
     requestAnimationFrame(animation);
 
@@ -35,7 +34,6 @@ export default function Homepage() {
       },
       x: "-=300px",
     })
-  }
   }, [])
 
   const animation = () => {
