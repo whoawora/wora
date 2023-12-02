@@ -112,7 +112,6 @@ export default function homepage() {
                 </div>
               </div>
           </div>
-   
       </section>
     
     </div>
