@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import ScrollAnimations from "../components/scrollanimations";
 import Preloader from '../components/Preloader'
 import { AnimatePresence } from "framer-motion";
+import Homepage from "../components/homepage/homepage";
 
 
 export default function Home() {
@@ -18,11 +19,12 @@ export default function Home() {
   },[])
 
   return (
-    <div>
+    <div className="bg-black h-full">
       <AnimatePresence mode="wait">
       { isLoading && <Preloader />}
       </AnimatePresence>
-      <ScrollAnimations />
+      <Homepage />
+      {/* <ScrollAnimations /> */}
     </div>
   );
 }

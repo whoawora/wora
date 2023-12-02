@@ -7,10 +7,13 @@ import tawisetimg from '@/image/tawiset-cover.png'
 import { motion } from 'framer-motion';
 import { imgSlide } from './anim';
 
+
+
 type Props = {}
 
 export default function page({}: Props) {
   return (
+    <>
     <div className='bg-black w-full h-screen'>
       <div className='px-6 xl:px-28 mx-auto pt-16'>
         <div className="grid grid-cols-1 gap-4">
@@ -33,5 +36,6 @@ export default function page({}: Props) {
         <br />
         <br />
     </div>
+    </>
   )
 }

@@ -1,0 +1,16 @@
+.con-text{
+    overflow: hidden;
+    /* border: solid 2px white; */
+    padding-top: 3rem;
+}
+
+h1 {
+    font-size: 8rem;
+    font-weight:700;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 0.8;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    line-height: 5.9rem;
+    padding: 2% 0; */
+}
