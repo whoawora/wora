@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "../homepage/homepage.css";
-import SplitText from "gsap-trial/SplitText";
 import { gsap } from "gsap";
 import { easeInOut } from "framer-motion";
 import styles from './homepage.module.css'
@@ -9,7 +8,7 @@ import SplitType from 'split-type'
 
 
 
-gsap.registerPlugin(SplitText,ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 export default function Index() {
   const target = useRef(null);
   const firstText = useRef(null);
