@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react'
 import styles from './style.module.scss'
 import { motion } from 'framer-motion'
 import { slideUp } from './anim'
+import Image from 'next/image'
+import portal from '../../gif/portal.gif'
+import { maxHeaderSize } from 'http'
 
 export default function Index() {
   const [dimension, setDimension] = useState({width:0, height:0})
@@ -29,7 +32,16 @@ export default function Index() {
     <motion.div variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
         {
           dimension.height > 0 && <>
-            <p>Is Loading</p>
+            <p className='h-screen'>  
+              <Image
+                src={portal}
+                alt="Picture of the author"
+                // width={maxHeaderSize}
+                sizes='100vh'
+                objectFit='cover'
+              />
+            </p>
+            
             <svg>
             <motion.path variants={curve} initial="initial" exit="exit"></motion.path>
             </svg>
