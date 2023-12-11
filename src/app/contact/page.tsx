@@ -1,31 +1,58 @@
 "use client";
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import Link from "next/link";
 import styles from "./contact.module.css";
+import './contact.css'
+import { easeInOut } from "framer-motion";
+import SplitType from 'split-type'
+import { FaInstagram } from "react-icons/fa";
+import { MdOutlineAlternateEmail } from "react-icons/md";
+import { LiaLinkedin } from "react-icons/lia";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 type Props = {};
-
+const style = { color: "white"}
 export default function Contact({}: Props) {
+  useEffect(() => {
+  AOS.init({});
+  AOS.refresh();
+}, []);
+
   return (
-    <div className="pt-20 bg-black w-screen h-screen">
-      <Link className=""
-        href="https://www.linkedin.com/in/worawiboon-sathone"
-        target="_blank"
-      >
-        Linkedin
-      </Link>
+    <div className="bg-black h-screen flex justify-center items-center text-white">
 
-      <Link
-        className=""
-        href="https://www.instagram.com/pecwrs/"
-        target="_blank"
-      >
-        Instagram
-      </Link>
+        <div className="" data-aos="fade-right" data-aos-duration="1500">
+        <Link href="https://www.linkedin.com/in/worawiboon-sathone" target="_blank">
 
-      <Link href="mailto:worasathone@gmail.com" className="">
-        DROP ME AN EMAIL
-      </Link>
+          <div className="flex justify-center items-center contact-text gap-2">
+          <LiaLinkedin style={style}/>
+            <p className="split-linkedin">LINKEDIN</p>     
+          </div>
+        </Link>
+
+        <Link href="https://www.instagram.com/pecwrs/" target="_blank">
+          
+          <div className="flex justify-center items-center contact-text gap-2">
+            <FaInstagram style={style}/>
+            <p>INSTAGRAM</p>
+          </div>
+         
+        </Link>
+
+        <Link href="mailto:worasathone@gmail.com">
+          <div className="flex justify-center items-center contact-text gap-2">
+          <MdOutlineAlternateEmail style={style}/>
+          <p>DROP ME AN EMAIL</p>
+          </div>
+        
+        </Link>
+
+        </div>
+       
+   
+     
     </div>
   );
 }

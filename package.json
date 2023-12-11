@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.0.0",
     "@ionic/react": "^7.4.2",
     "@ionic/react-router": "^7.4.2",
     "@react-three/fiber": "^8.14.2",
@@ -30,6 +31,7 @@
     "postcss": "^8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.12.0",
     "react-three-fiber": "^6.0.13",
     "sass": "^1.69.5",
     "split-type": "^0.3.4",
