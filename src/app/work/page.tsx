@@ -25,9 +25,9 @@ export default function Work({}: Props) {
 
   return (
     <>
-    <div className='bg-black  h-full'>
-      <div className='px-6 xl:px-28 pt-16'>
-        <div className="grid grid-cols-1 gap-4">
+    <div className='bg-black h-full pt-20'>
+      <div className='px-6 xl:px-28'>
+        <div className="grid grid-cols-1 gap-36">
           <div>
               <div color="neutral" onClick={() => setOpen(true)}>
             <motion.div variants={imgSlide} initial="initial" animate="enter" exit="exit">
@@ -36,9 +36,9 @@ export default function Work({}: Props) {
               </div> 
               </motion.div> 
             </div>
-            <Modal open={open} onClose={() => setOpen(false)} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center',overflow:"hidden"}}>
-              <Sheet sx={{maxWidth: "100%",  maxHeight: "90vh", overflowY: "scroll", backgroundColor:"#17132D", outline:'none' , border:"1px solid white" }}>
-                <ModalClose variant="plain" sx={{ m: 1 , backgroundColor: "#fff"}} />
+            <Modal open={open} onClose={() => setOpen(false)} className="modal-work" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center',overflow:"hidden"}}>
+              <Sheet className="scroll-hide"  sx={{ maxWidth: "100%",  maxHeight: "90vh",  backgroundColor:"#17132D", outline:'none', border:"1px solid white", borderRadius: '10px', overflowY:"scroll"}}>
+                <ModalClose variant="plain" sx={{ m: 1 , backgroundColor: "#fff", position: "sticky"}} />
                 {/* <Typography mb={1}> </Typography> */}
                 <Image src={TawisetDetail} alt="Picture of the author"  className='rounded-3xl' />
               </Sheet>
@@ -65,9 +65,12 @@ export default function Work({}: Props) {
       </div>
         <br />
         <br />
-    </div>
-    <div className="flex justify-center items-center h-screen">
-    
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
     </div>
 
   

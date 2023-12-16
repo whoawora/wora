@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --backgroundColor: #FEF852;
   --backgroundColorSecondary: #FFFC94;
@@ -10,6 +12,17 @@
 
   --headlineBig: clamp(3rem, 10vw, 15rem);
   --headlineSmall: clamp(1rem, 1.2vw, 6rem);
+}
+
+html {
+  overflow-y:   scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 
 * {

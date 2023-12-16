@@ -31,8 +31,9 @@ export default function Index() {
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
   
 return (
-<motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className={styles.menu}>
-       <div className={styles.body}>
+  <div className={styles.menu}>
+    <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className={styles.body}>
+       {/* <div > */}
             <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className={styles.nav}>
                     {/* <div className={styles.header}>
                         <p>Navigation</p>
@@ -44,8 +45,9 @@ return (
                     }
             </div>
             <Footer />
-        </div>
+        {/* </div> */}
         <Curve />
     </motion.div>
+    </div>
   )
 }
