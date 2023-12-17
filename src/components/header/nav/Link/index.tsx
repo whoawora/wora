@@ -20,7 +20,7 @@ export default function Index({data, isActive, setSelectedIndicator}:IndexProps)
   return (
     <motion.div className={styles.link} onMouseEnter={() => {setSelectedIndicator(href)}} custom={index} variants={slide} initial="initial" animate="enter" exit="exit">
         <motion.div variants={scale} animate={isActive ? "open" : "closed"} className={styles.indicator}></motion.div>
-        <Link href={href}>{title}</Link>
+        <Link href={href} className={styles.pillow}>{title}</Link>
       </motion.div>
   )
 }

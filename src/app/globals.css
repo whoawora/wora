@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 
+@font-face { 
+  font-family: "Pilowlava"; 
+  src: url('../fonts/Pilowlava-Regular.otf'); 
+  font-weight: normal; 
+  font-style: normal; 
+} 
+
 
 :root {
   --backgroundColor: #FEF852;

@@ -87,13 +87,13 @@ export default function Index() {
       <section>
         <div>
             <div className="con-text text-center text-white"  ref={target}>
-                <h1 className="split-first-name">worawiboon</h1>
+                <h1 className="split-first-name pillow-lava">worawiboon</h1>
             </div>
             <div className="con-text text-center text-white"  ref={target}>
-                <h1 className="split-last-name">sathone</h1>
+                <h1 className="split-last-name pillow-lava">sathone</h1>
             </div>
             <div className="con-text text-center text-white"  ref={target}>
-                <h1 className="split-position">UX / UI Design</h1>
+                <h1 className="split-position pillow-lava">UX / UI Design</h1>
             </div>    
         </div>
        
@@ -112,7 +112,7 @@ export default function Index() {
       </section>
     
     </div>
-    <div className="h-screen bg-white"></div>
+    {/* <div className="h-screen bg-white"></div> */}
     
     </>
   );

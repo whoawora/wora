@@ -2,14 +2,14 @@
 
 import React,{useState} from 'react'
 import Image from 'next/image'
-import Link from "next/link";
 import tawisetimg from '@/image/tawiset-cover.png'
 import TawisetDetail from '@/image/tawisetDetail.svg'
+import Furcover from '@/image/furniture-cover.png'
+// import RedesignFurDetail from '@/image/redesign-funiture.svg'
 import { motion } from 'framer-motion';
 import { imgSlide } from './anim';
 import Modal from '@mui/joy/Modal';
 import ModalClose from '@mui/joy/ModalClose';
-import Typography from '@mui/joy/Typography';
 import Sheet from '@mui/joy/Sheet';
 
 type Props = {}
@@ -50,15 +50,14 @@ export default function Work({}: Props) {
         <div color="neutral" onClick={() => setOpen1(true)}>
         <motion.div variants={imgSlide} initial="initial" animate="enter" exit="exit">
           <div className="work-content rounded-3xl bg-neutral-900 w-full h-full" data-aos="fade-up">
-              <Image src={tawisetimg} alt="Picture of the author" className='rounded-3xl' />
+              <Image src={Furcover} alt="Picture of the author" className='rounded-3xl' />
           </div> 
           </motion.div> 
         </div>
-        <Modal open={open1} onClose={() => setOpen1(false)} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Sheet variant="outlined" sx={{maxWidth: 500,borderRadius: 'md', p: 3,boxShadow: 'lg',}}>
-            <ModalClose variant="plain" sx={{ m: 1 }} />
-            <Typography mb={1}>Tawiset</Typography>
-            <div>abc</div>
+        <Modal open={open1} onClose={() => setOpen1(false)} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center',overflow:"hidden" }}>
+        <Sheet className="scroll-hide"  sx={{ maxWidth: "100%",  maxHeight: "90vh",  backgroundColor:"#fff", outline:'none', border:"1px solid white", borderRadius: '10px', overflowY:"scroll"}}>
+          <ModalClose variant="plain" sx={{ m: 1 , backgroundColor: "#fff", position: "sticky"}} />
+            <Image src={""} alt="Picture of the author"  />
           </Sheet>
         </Modal>
         </div> 
