@@ -20,11 +20,10 @@ export default function Index() {
   let xPercent = 0;
   let direction = 1;
 
-  // var union = document.getElementById('union')
-  gsap.to(".union", {rotate:360,duration: 2,repeat:-1});
+ 
 
   useEffect( () => {
-    
+    gsap.to(".union", {rotate:360,duration: 2,repeat:-1});
 
     requestAnimationFrame(animation);
 
