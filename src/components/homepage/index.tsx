@@ -5,6 +5,8 @@ import { easeInOut } from "framer-motion";
 import styles from './homepage.module.css'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from 'split-type'
+import Image from 'next/image'
+import Union from '@/image/Union.png'
 
 
 
@@ -18,7 +20,12 @@ export default function Index() {
   let xPercent = 0;
   let direction = 1;
 
+  // var union = document.getElementById('union')
+  gsap.to(".union", {rotate:360,duration: 2,repeat:-1});
+
   useEffect( () => {
+    
+
     requestAnimationFrame(animation);
 
     gsap.to(slider.current, {
@@ -85,7 +92,9 @@ export default function Index() {
     <div className="h-screen grid content-between text-center">
       <section></section>
       <section>
+      <Image src={Union} alt="Picture of the author" className='union' id="union" />
         <div>
+       
             <div className="con-text text-center text-white"  ref={target}>
                 <h1 className="split-first-name pillow-lava">worawiboon</h1>
             </div>
