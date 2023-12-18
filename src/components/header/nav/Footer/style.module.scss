@@ -5,3 +5,8 @@
     font-size: 12px;
     gap: 40px;
 }
+@media (max-width: 330px) {
+    .footer {
+        font-size: 6px;
+    }
+}

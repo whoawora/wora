@@ -22,6 +22,7 @@
             .nav{
                 display: flex;
                 flex-direction: column;
+                justify-items: center;
                 font-size: 56px;
                 gap: 12px;
                 margin-top: 80px;
@@ -67,17 +68,36 @@
             }
 
 
-        }
-
-        @media (max-width: 419px) {
-            .body {
-                padding: 70px;
+            @media (max-width: 270px) {
+                .nav {
+                    
+                    font-size: 18px;
+                }
             }
+
         }
 
         @media (max-width: 330px) {
             .body {
                 padding: 60px;
+            }
+        }
+
+        @media (max-width: 270px) {
+            .body {
+                padding: 40px;
+            }
+        }
+
+        @media (max-width: 250px) {
+            .body {
+                padding: 50px;
+            }
+        }
+
+        @media (max-width: 240px) {
+            .body {
+                padding: 45px;
             }
         }
     }
