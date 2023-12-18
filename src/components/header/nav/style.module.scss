@@ -42,12 +42,42 @@
                 
             }
             
-            @media (max-width: 375px) {
+            @media (max-width: 767px) {
                 .nav {
                     font-size: 40px;
                 }
             }
+          
+            @media (max-width: 469px) {
+                .nav {
+                    font-size: 30px;
+                }
+            }
+
+            @media (max-width: 419px) {
+                .nav {
+                    font-size: 25px;
+                }
+            }
+
+            @media (max-width: 330px) {
+                .nav {
+                    font-size: 20px;
+                }
+            }
 
 
+        }
+
+        @media (max-width: 419px) {
+            .body {
+                padding: 70px;
+            }
+        }
+
+        @media (max-width: 330px) {
+            .body {
+                padding: 60px;
+            }
         }
     }
