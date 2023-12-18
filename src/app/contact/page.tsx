@@ -28,7 +28,7 @@ export default function Contact({}: Props) {
 
           <div className="flex justify-center items-center contact-text gap-2">
           <LiaLinkedin style={style}/>
-            <p className="split-linkedin">LINKEDIN</p>     
+            <p className="split-linkedin pillow">LINKEDIN</p>     
           </div>
         </Link>
 
@@ -36,7 +36,7 @@ export default function Contact({}: Props) {
           
           <div className="flex justify-center items-center contact-text gap-2">
             <FaInstagram style={style}/>
-            <p>INSTAGRAM</p>
+            <p className="pillow">INSTAGRAM</p>
           </div>
          
         </Link>
@@ -44,7 +44,7 @@ export default function Contact({}: Props) {
         <Link href="mailto:worasathone@gmail.com">
           <div className="flex justify-center items-center contact-text gap-2">
           <MdOutlineAlternateEmail style={style}/>
-          <p>DROP ME AN EMAIL</p>
+          <p className="pillow">DROP ME AN EMAIL</p>
           </div>
         
         </Link>
