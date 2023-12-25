@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from 'split-type'
 import Image from 'next/image'
 import Union from '@/image/Union.png'
+import Star from '@/image/star.png'
 
 
 
@@ -24,6 +25,7 @@ export default function Index() {
 
   useEffect( () => {
     gsap.to(".union", {rotate:360,duration: 2,repeat:-1});
+    gsap.to(".star", {rotate:-360,duration: 2,repeat:-1});
 
     requestAnimationFrame(animation);
 
@@ -92,8 +94,8 @@ export default function Index() {
       <section></section>
       <section>
       <Image src={Union} alt="Picture of the author" className='union' id="union" />
-        <div>
-       
+    
+        <div>   
             <div className="con-text text-center text-white"  ref={target}>
                 <h1 className="split-first-name pillow-lava">worawiboon</h1>
             </div>
@@ -101,9 +103,13 @@ export default function Index() {
                 <h1 className="split-last-name pillow-lava">sathone</h1>
             </div>
             <div className="con-text text-center text-white"  ref={target}>
+            <Image src={Star} alt="Picture of the author" className='star' id="star" />
                 <h1 className="split-position pillow-lava">UX / UI Design</h1>
             </div>    
+  
         </div>
+
+      
        
         
       </section>

@@ -1,0 +1,25 @@
+.flower {
+    margin-top: -10vw;
+    margin-left: 100px;
+    position: absolute;
+    z-index: 0;
+    width: 19vw;
+}
+.earth {
+    right: 0;
+    margin-top: 2vw;
+    margin-right: 5vw;
+    position: absolute;
+    z-index: 0;
+    width: 20vw;
+}
+
+.earth {
+    transform: translateY(-80px);
+}
+
+@media (max-width: 500px) {
+    .flower {
+        margin-left: 0px;
+    }
+}

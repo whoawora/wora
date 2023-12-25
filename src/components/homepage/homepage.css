@@ -5,6 +5,7 @@
 }
 
 h1 {
+
     font-size: 9vw;
     font-weight:700;
     text-transform: uppercase;
@@ -24,5 +25,13 @@ h1 {
 .union{
     margin-left: 6vw;
     position: absolute;
-    width: 100px;
+    width: 120px;
+}
+.star{
+    right: 0;
+    margin-top: 2vw;
+    margin-right: 5vw;
+    position: absolute;
+    z-index: 0;
+    width: 180px;
 }

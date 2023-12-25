@@ -1,6 +1,23 @@
 .contact-text{
     font-size: 6vw;
+    z-index: 1;
 }
 .pillow {
     font-family: 'Pilowlava';
+}
+.poo {
+    right: 0;
+    margin-right: 25vw;
+    margin-top: -20vw;
+    width: 10vw;
+    position: absolute;
+}
+
+.wong {
+    left: 0;
+    margin-left: 8vw;
+    margin-top: 33vw;
+    width: 10vw;
+    position: absolute;
+    rotate: 45deg;
 }

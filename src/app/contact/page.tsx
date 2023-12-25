@@ -10,19 +10,33 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 import { LiaLinkedin } from "react-icons/lia";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Image from 'next/image'
+import Poo from '@/image/poo.png'
+import { gsap } from "gsap";
+import Wong from '@/image/wong.png'
+
 
 
 type Props = {};
 const style = { color: "white"}
 export default function Contact({}: Props) {
   useEffect(() => {
+  gsap.to(".poo", {rotate:360,duration: 5,repeat:-1});
+
+  gsap.to(".wong", {
+    rotate:90,
+    y: 0,
+    duration: 2,
+    stagger: { each: 0.15, yoyo: true, repeat: -1 },
+    ease: "sine.inOut"
+  });
   AOS.init({});
   AOS.refresh();
 }, []);
 
   return (
     <div className="bg-black h-screen flex justify-center items-center text-white">
-
+ <Image src={Poo} alt="Picture of the author" className='poo' id="poo" />
         <div className="" data-aos="fade-right" data-aos-duration="1500">
         <Link href="https://www.linkedin.com/in/worawiboon-sathone" target="_blank">
 
@@ -48,10 +62,10 @@ export default function Contact({}: Props) {
           </div>
         
         </Link>
-
+     
         </div>
        
-   
+        <Image src={Wong} alt="Picture of the author" className='wong' id="wong" />
      
     </div>
   );
