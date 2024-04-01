@@ -12,10 +12,10 @@ const navItems = [
       title: "Home",
       href: "/",
     },
-    {
-      title: "Work",
-      href: "/work",
-    },
+    // {
+    //   title: "Work",
+    //   href: "/work",
+    // },
     {
       title: "About",
       href: "/about",

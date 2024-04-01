@@ -97,14 +97,14 @@ export default function Index() {
     
         <div>   
             <div className="con-text text-center text-white"  ref={target}>
-                <h1 className="split-first-name pillow-lava">worawiboon</h1>
+                <h1 className="split-first-name pillow-lava">WoraWiBooN</h1>
             </div>
             <div className="con-text text-center text-white"  ref={target}>
-                <h1 className="split-last-name pillow-lava">sathone</h1>
+                <h1 className="split-last-name pillow-lava">SaThonE</h1>
             </div>
             <div className="con-text text-center text-white"  ref={target}>
             <Image src={Star} alt="Picture of the author" className='star' id="star" />
-                <h1 className="split-position pillow-lava">UX / UI Design</h1>
+                <h1 className="split-position pillow-lava">Back-End</h1>
             </div>    
   
         </div>
@@ -117,9 +117,9 @@ export default function Index() {
       <div className={styles.main}>
               <div className={styles.sliderContainer}>
                 <div className={styles.slider}>
-                      <p ref={firstText}>&nbsp; UX / UI Design | Back end Developer Golang - </p>
-                      <p ref={secondText}>&nbsp; UX / UI Design | Back end Developer Golang - </p>
-                      <p ref={thirdText}>&nbsp; UX / UI Design | Back end Developer Golang - </p>
+                      <p ref={firstText}>&nbsp; Back-End Developer Golang * Back-End Developer Golang * </p>
+                      <p ref={secondText}>&nbsp; Back-End Developer Golang * Back-End Developer Golang * </p>
+                      <p ref={thirdText}>&nbsp; Back-End Developer Golang * Back-End Developer Golang * </p>
                 </div>
               </div>
           </div>

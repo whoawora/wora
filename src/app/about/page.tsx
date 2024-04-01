@@ -16,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function AboutHome({}: Props) {
   const text =
-    "Hello! My name is Petch. I graduated from Silpakorn University, Bacherlor of Information and Communication Technology in interactive applications. I am currently working as a back-end developer using the Golang language, but presently interested in working as a UX/UI designer. I have experience interning as a UX/UI designer. I have worked in UX/UI design and redesign, including Sitemap, User Journey, Mood board, and other related works. I am interested in design and problem solving because I believe that good design is not only artwork but rather a tool that helps user solve problems.";
+    "Hi there! I'm Petch, I graduated with a Bachelor of Information and Comunication Technology Degree in Interactive application from Silpakorn University. and currently work as a Back-End developer using Golang. Passionate about coding and intend to get to know more about the cybersecurity industry. I'm committed to make significant improvements to my profession while seeking opportunities to learn and grow.";
 
   const useArrayRef = (): [
     React.MutableRefObject<any[]>,

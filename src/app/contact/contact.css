@@ -1,21 +1,21 @@
 .contact-text{
-    font-size: 6vw;
+    font-size: 8vw;
     z-index: 1;
 }
 .pillow {
     font-family: 'Pilowlava';
 }
 .poo {
-    right: 0;
-    margin-right: 25vw;
-    margin-top: -20vw;
+    align-items: center;
+    margin-right: 0vw;
+    margin-top: -35vw;
     width: 10vw;
     position: absolute;
 }
 
 .wong {
     left: 0;
-    margin-left: 8vw;
+    margin-left: 20vw;
     margin-top: 33vw;
     width: 10vw;
     position: absolute;
