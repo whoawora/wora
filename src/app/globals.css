@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 
-@font-face { 
-  font-family: "Pilowlava"; 
-  src: url('../fonts/Magtis-ExtraBold-free-personal-use.otf'); 
-  font-weight: normal; 
-  font-style: normal; 
-} 
+@font-face {
+  font-family: "Pilowlava";
+  src: url('../fonts/Barber-Fill.otf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 :root {
@@ -22,14 +22,17 @@
 }
 
 html {
-  overflow-y:   scroll;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE 10+ */
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
 }
 
 * {
@@ -41,18 +44,20 @@ html {
 body {
   cursor: wait;
 }
-.text-contact{
+
+.text-contact {
   font-size: var(--headlineBig);
   font-weight: 800;
   word-wrap: break-word;
 }
 
 /* about */
-.reveal{
+.reveal {
   padding-left: 20%;
   padding-right: 10%;
 }
-.reveal-text{
+
+.reveal-text {
   font-size: var(--headlineBig);
   line-height: var(--headlineBig);
   font-weight: 800;
@@ -60,15 +65,17 @@ body {
   word-wrap: break-word;
   filter: drop-shadow(0 0 0.06rem rgb(2, 2, 2))
 }
+
 .spacing-small {
   height: 50vh;
 }
+
 .spacing {
   height: 100vh;
 }
+
 @media screen and (max-width: 500px) {
   .reveal {
     padding-left: 10px;
   }
 }
-

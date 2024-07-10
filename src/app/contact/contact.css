@@ -1,14 +1,16 @@
-.contact-text{
-    font-size: 8vw;
+.contact-text {
+    font-size: 7vw;
     z-index: 1;
 }
+
 .pillow {
     font-family: 'Pilowlava';
 }
+
 .poo {
     align-items: center;
-    margin-right: 0vw;
-    margin-top: -35vw;
+    margin-left: 48vw;
+    margin-top: -24vw;
     width: 10vw;
     position: absolute;
 }
