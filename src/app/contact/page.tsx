@@ -55,7 +55,7 @@ export default function Contact({}: Props) {
          
         </Link>
 
-        <Link href="mailto:worasathone@gmail.com">
+        <Link href="mailto:worawiboon.sathone@gmail.com">
           <div className="flex justify-center items-center contact-text gap-2">
           <MdOutlineAlternateEmail style={style}/>
           <p className="pillow">Drop Me An Email</p>

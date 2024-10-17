@@ -97,10 +97,10 @@ export default function Index() {
     
         <div>   
             <div className="con-text text-center text-white"  ref={target}>
-                <h1 className="split-first-name pillow-lava">WoraWiBooN</h1>
+                <h1 className="split-first-name pillow-lava">Worawiboon</h1>
             </div>
             <div className="con-text text-center text-white"  ref={target}>
-                <h1 className="split-last-name pillow-lava">SaThonE</h1>
+                <h1 className="split-last-name pillow-lava">Sathone</h1>
             </div>
             <div className="con-text text-center text-white"  ref={target}>
             <Image src={Star} alt="Picture of the author" className='star' id="star" />
