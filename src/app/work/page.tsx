@@ -59,7 +59,7 @@ export default function Work({}: Props) {
         <Modal open={open1} onClose={() => setOpen1(false)} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center',overflow:"hidden" }}>
         <Sheet className="scroll-hide"  sx={{ maxWidth: "80%",  maxHeight: "90vh",  backgroundColor:"#fff", outline:'none', border:"1px solid white", borderRadius: '10px', overflowY:"scroll"}}>
           <ModalClose variant="plain" sx={{ m: 1 , backgroundColor: "#fff", position: "sticky"}} />
-          <Image src={Furdetail} alt="Picture of the author" />
+          {/* <Image src={Furdetail} alt="Picture of the author" /> */}
           </Sheet>
         </Modal>
 
