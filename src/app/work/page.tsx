@@ -5,7 +5,6 @@ import Image from 'next/image'
 import tawisetimg from '@/image/tawiset-cover.png'
 import TawisetDetail from '@/image/tawiset-more.jpeg'
 import Furcover from '@/image/furniture-cover.png'
-import Furdetail from '@/image/fur-detail.jpg'
 import Tcdccover from '@/image/tcdc-cover.jpg'
 import TcdcDetail from '@/image/tcdc.jpeg'
 import { motion } from 'framer-motion';
